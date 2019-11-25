@@ -1,0 +1,172 @@
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:#EAF2F8; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    opacity: 0.6;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color:#154360;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color:black;
+    opacity: unset;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 10px;}
+}
+
+
+ /************************************************* mine **************************************/
+
+#menu {
+    display: block;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #154360;
+    text-align: center;
+    padding: 15px 0 10px 0;
+    opacity: 0.8;
+}
+#menu:hover {
+    font-weight: bold;
+    opacity: unset;
+}
+
+.body{
+    /* The image used */
+    background-image: url("../Images/background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    min-width: 594px;
+    display: block;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.main:focus {
+    outline: none;
+}
+
+#article1, #article2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Styling the button that expands and collapses the content */
+.collapsible {
+    background-color:#EAF2F8;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: #cccccc;
+    text-align: center;
+    outline: #cccccc;
+    opacity: 0.60;
+    height: 200px;
+    max-height: 400px;
+}
+
+#button1, #button2 {
+    color:#154360;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    opacity: revert;
+}
+
+/* editing the button */
+.active, .collapsible:hover {
+    background-color:#F2F4F4;
+    color: black;
+    opacity: unset;
+}
+
+/* Styling the content */
+.content {
+    padding: 0 18px;
+    background-color:#F2F4F4;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    opacity: 0.75;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\2796';
+}
+
+#linkedin, #git, #hacker, #fb {
+    padding: 10px;
+}
+
+#contact {
+    padding: 25px 4vw 0 4vw;
+    width: 100%;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+#footer {
+    text-align: center;
+}
+
+
+
+
+
