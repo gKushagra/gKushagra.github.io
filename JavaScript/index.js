@@ -1,7 +1,20 @@
+blockDiv("line-1");
+blockDiv("line-2");
+blockDiv("line-3");
 blockDiv("intro");
-setProperties("welcome", "62", "center");
-setPaddingTop("welcome");
+displayDiv("line-1");
+setProperties("line-1", "72", "center");
+setPaddingTop("line-1");
 
+homeTransition("line-1", "line-2", "62", "center", "", "line-2");
+setTimeout(() => {
+  homeTransition("line-2", "line-3", "62", "center", "", "line-3");
+}, 2000);
+setTimeout(() => {
+  homeTransition("line-3", "intro", "22", "left", "intro", "");
+}, 4000);
+
+/*
 window.onscroll = function replace() {
   if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
     blockDiv("welcome");
@@ -17,6 +30,32 @@ window.onscroll = function replace() {
     setProperties("welcome", "62", "center");
   }
 };
+*/
+
+// Transitions for home screen
+
+function homeTransition(
+  div1,
+  div2,
+  fontSize = "",
+  textAlign = "",
+  padding = "",
+  paddingTop = ""
+) {
+  setTimeout(() => {
+    blockDiv(div1);
+    displayDiv(div2);
+    setProperties(div2, fontSize, textAlign);
+    if (!paddingTop == "") {
+      setPaddingTop(paddingTop);
+    }
+    if (!padding == "") {
+      setPadding(padding);
+    }
+  }, 2000);
+}
+
+// Helper functions
 
 function setProperties(divId, fontSize = "", textAlign = "") {
   var screenWidth = window.innerWidth;
@@ -49,5 +88,5 @@ function setTextAlign(divId, textAlign) {
 }
 
 function setPadding(divId) {
-  document.getElementById(`${divId}`).style.padding = "50px";
+  document.getElementById(`${divId}`).style.padding = "200px";
 }
