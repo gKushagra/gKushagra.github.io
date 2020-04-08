@@ -37,3 +37,6 @@ function blockDiv(divId) {
 function displayDiv(divId) {
   document.getElementById(`${divId}`).style.display = "block";
 }
+
+// Get current Time and date
+
