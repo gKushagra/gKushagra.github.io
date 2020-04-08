@@ -12,43 +12,71 @@
 
 <body>
     <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
+        <!-- Side Nav Bar -->
+        <div class="col-md-3" id="column1">
+            <!-- Profile Photo -->
             <div class="row">
-                <h3>A list of courses I have taken at UT Dallas</h3>
-                <div class="row">
-                    <ul>
-                        <li>Algorithm Analysis and Data Structures</li>
-                        <li>Human Computer Interaction</li>
-                        <li>Machine Learning</li>
-                        <li>Virtual Reality</li>
-                        <li>Operating System Concepts</li>
-                        <li>Computer Architecture</li>
-                        <li>Discrete Structures</li>
-                    </ul>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <img src="./Images/gKushagra.jpg" alt="Profile Photo" id="profile-photo">
                 </div>
+                <div class="col-md-1"></div>
             </div>
+            <!-- Name -->
             <div class="row">
-                <h3>A brief description of my projects</h3>
+                <div class="col-md-2"></div>
+                <div class="col-md-8" id="name">
+                    <p>Kushagra Gupta</p>
+                </div>
+                <div class="col-md-2"></div>
             </div>
+            <!-- Navigation List -->
             <div class="row">
-                <ul>
-                    <li>
-                        <b>Trackit</b><br>
-                        <p>Website with signup, signin, logout, and sessions implemented.</p>
-                    </li>
-                    <li>
-                        <b>Find-ur-Resto</b><br>
-                        <p>Website to help users pick a restaurant of their choice.</p>
-                    </li>
-                    <li>
-                        <b>Rebate Form</b><br>
-                        <p>Desktop application to read, edit and delete a rebate form application.</p>
-                    </li>
-                </ul>
+                <div class="col-md-1"></div>
+                <div class="col-md-10" id="nav-col">
+                    <nav>
+                        <!-- List -->
+                        <ul id="nav-list">
+                            <li><a href="javascript:window.onclick=displayProjects()">Projects</a></li>
+                            <li><a href="javascript:window.onclick=displayEducation()">Education</a></li>
+                            <li><a href="./Docs/pdf1.pdf" target="_blank">Resume</a></li>
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScT75h-GG0wehBKPcu_jERbolat1wQvJ2ZDGEKmkwfT-PGYhg/viewform?embedded=true"
+                                    target="_black">Contact</a>
+                            </li>
+                        </ul>
+                        <!-- Drop down list -->
+                        <select name="nav-select" onchange="selectClick()" id="nav-select">
+                            <option value="projects">Projects</option>
+                            <option value="education">Education</option>
+                            <option value="resume">Resume</option>
+                            <option value="contact">Contact</option>
+                        </select>
+                    </nav>
+                </div>
+                <div class="col-md-1"></div>
             </div>
         </div>
-        <div class="col-md-3"></div>
+        <!-- Information display area -->
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10" id="info-display">
+                    <!-- Projects -->
+                    <div class="row" id="projects">
+                        <h1>Projects</h1>
+                    </div>
+                    <!-- Education -->
+                    <div class="row" id="education">
+                        
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row">
+        
     </div>
 
 

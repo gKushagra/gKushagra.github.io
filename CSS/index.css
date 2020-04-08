@@ -1,7 +1,8 @@
 body {
   font-family: Consolas, monaco, monospace;
   background-color: white;
-  overflow: hidden;
+  overflow: auto;
+  letter-spacing: 2px;
 }
 
 #line-1,
@@ -12,6 +13,5 @@ body {
 
 #intro-text {
   padding: 50px;
-  border: 1px solid #e7e7e7;
-  border-radius: 10px;
+  /* border: 1px solid #e7e7e7; */
 }

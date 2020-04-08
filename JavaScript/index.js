@@ -3,15 +3,15 @@ blockDiv("line-2");
 blockDiv("line-3");
 blockDiv("intro");
 displayDiv("line-1");
-setProperties("line-1", "72", "center");
+setProperties("line-1", "52", "center");
 setPaddingTop("line-1");
 
-homeTransition("line-1", "line-2", "62", "center", "", "line-2");
+homeTransition("line-1", "line-2", "42", "center", "", "line-2");
 setTimeout(() => {
-  homeTransition("line-2", "line-3", "62", "center", "", "line-3");
+  homeTransition("line-2", "line-3", "42", "center", "", "line-3");
 }, 2000);
 setTimeout(() => {
-  homeTransition("line-3", "intro", "22", "left", "intro", "");
+  homeTransition("line-3", "intro", "18", "left", "intro", "");
 }, 4000);
 
 /*
@@ -75,8 +75,9 @@ function displayDiv(divId) {
 }
 
 function setPaddingTop(divId) {
-  document.getElementById(`${divId}`).style.paddingTop = `${window.innerHeight /
-    2}px`;
+  document.getElementById(`${divId}`).style.paddingTop = `${
+    window.innerHeight / 2
+  }px`;
 }
 
 function setFontSize(divId, fontSize) {
