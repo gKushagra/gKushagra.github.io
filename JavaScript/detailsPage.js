@@ -9,6 +9,13 @@ function selectClick() {
     displayProjects();
   } else if (val === "education") {
     displayEducation();
+  } else if (val === "./Docs/pdf1.pdf") {
+    window.open(val, "_blank");
+  } else if (
+    val ===
+    "https://docs.google.com/forms/d/e/1FAIpQLScT75h-GG0wehBKPcu_jERbolat1wQvJ2ZDGEKmkwfT-PGYhg/viewform?embedded=true"
+  ) {
+    window.open(val, "_blank");
   }
 }
 
@@ -39,4 +46,3 @@ function displayDiv(divId) {
 }
 
 // Get current Time and date
-

@@ -107,7 +107,8 @@ ul li a:hover {
 #courses-list,
 #org-list,
 #workshops-list,
-#projects-list {
+#projects-list,
+#personal-projects-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
