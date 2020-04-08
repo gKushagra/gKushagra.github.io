@@ -3,15 +3,15 @@ blockDiv("line-2");
 blockDiv("line-3");
 blockDiv("intro");
 displayDiv("line-1");
-setProperties("line-1", "52", "center");
+setProperties("line-1", "", "center");
 setPaddingTop("line-1");
 
-homeTransition("line-1", "line-2", "42", "center", "", "line-2");
+homeTransition("line-1", "line-2", "", "center", "", "line-2");
 setTimeout(() => {
-  homeTransition("line-2", "line-3", "42", "center", "", "line-3");
+  homeTransition("line-2", "line-3", "", "center", "", "line-3");
 }, 2000);
 setTimeout(() => {
-  homeTransition("line-3", "intro", "18", "left", "intro", "");
+  homeTransition("line-3", "intro", "", "left", "", "");
 }, 4000);
 
 /*

@@ -18,7 +18,7 @@ nav select {
   display: none;
 }
 
-/* When display screen size is below 960px */
+/* When display screen size is below 768px */
 @media (max-width: 768px) {
   nav ul {
     display: none;

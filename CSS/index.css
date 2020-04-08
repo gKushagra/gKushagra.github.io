@@ -11,12 +11,29 @@ body {
   color: #336699;
 }
 
+#line-1 {
+  font-size: 52px;
+}
+
+#line-2,
+#line-3 {
+  font-size: 42px;
+}
+
+#intro {
+  padding: 200px;
+  font-size: 18px;
+}
+
 #intro-text {
   padding: 50px;
   /* border: 1px solid #e7e7e7; */
 }
 
 @media (max-width: 600px) {
+  #intro {
+    padding: 20px;
+  }
   #intro-text {
     padding: 10px;
   }
