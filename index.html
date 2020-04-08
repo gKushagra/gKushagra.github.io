@@ -1,159 +1,53 @@
 <!DOCTYPE html>
-<html id="background" lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Kushagra Gupta</title>
+<html lang="en">
 
-        <link rel="stylesheet" href="CSS/main.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/Favicon-Home.ico" type="ico">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
 
-        <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
+<body>
 
-
-    </head>
-    <header class="header">
-        <div class="row">
-            <div id="name" class="col-lg-12">
-                <h2 style="font-family: 'Comic Sans MS',serif; color: #154360">Kushagra Gupta</h2>
-                <p style="font-size: 20px; font-weight: lighter; font-family:'Comic Sans MS',serif; color:#5D6D7E">
-                    Full Stack Software Engineer | Human Computer Interaction Enthusiast | Artist</p>
-            </div>
+    <div class="row">
+        <p id="line-1">Hey!</p>
+        <p id="line-2">Thanks for stopping by!</p>
+        <p id="line-3">Let me introduce myself!</p>
+        <div id="intro">
+            <p id="intro-text">
+                My name is Kushagra and I take interest in <b>Fullstack Application Development</b>.<br><br>
+                I feel comfortable coding in <b>Java</b>, <b>C#</b> and <b>JavaScript</b>. I have some hands-on
+                experience in
+                frontend frameworks like <b>Angular</b> and <b>React</b>, building <b>RESTful Web Services</b> using
+                <b>Node</b> and <b>Express</b>,
+                and using JavaScript libraries like <b>JQuery</b>.
+                For most of my projects, <b>MySQL</b> and <b>MongoDB</b> are the databases that I have used and worked
+                with.<br><br>
+                I spend some time thinking how to enhance the interface and experience of existing web
+                applications.
+                I like to sketch sometimes!<br><br>
+                Sounds good?
+                <a href="./detailsPage.html" id="">Click</a> to know more.
+            </p>
         </div>
-        <div id="nav" class="row">
-            <div id="home" class="col-lg-3">
-                <a href="index.html" style="text-decoration: none">Home</a>
-            </div>
-            <div id="blog" class="col-lg-3">
-                <a href="blog.html" style="text-decoration: none">My Blog</a>
-            </div>
-            <div id="download" class="col-lg-3">
-                <a href="Docs/Kushagra_Gupta.pdf" target="_blank" style="text-decoration: none">Download Resume</a>
-            </div>
-            <div id="design" class="col-lg-3">
-                <a href="design.html" style="text-decoration: none">Interested in Design?</a>
-            </div>
-        </div>
-    </header>
-
-    <body class="body">
-        <!-- Education-->
-        <div id="education" class="row">
-            <div class="col-lg-12">
-                <button id="button1" type="button" class="collapsible">My Education</button>
-                <div class="content">
-                    <p style="text-align: center; font-family: Arial, Helvetica, sans-serif;font-size: 18px;padding: 5px 5px 5px 5px; color: #2E4053">
-                        I joined the <b>Master's program in Computer Science</b> at <b>The University of Texas at Dallas</b>
-                        in Fall 2019, and expect to graduate in <b>Spring 2021</b>.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- skillset -->
-        <div id="skillset" class="row">
-            <div class="col-lg-12">
-                <button id="button2" type="button" class="collapsible">I am good at</button>
-                <div class="content">
-                    <p style="text-align: left; font-family: Arial, Helvetica, sans-serif;font-size: 18px;padding: 5px 10px 5px 10px; color: #2E4053">
-                        I have done projects fully developed using <b>React.js</b> and MEAN stack, <b>MongoDB, Angular.js, Express.js, Node.js</b>.
-                        I have developed web applications using the Java stack <b>Java, Spring Boot, JSP, Servlets, JDBC, MySQL, Tomcat</b>.
-                        I have developed applications using C# and .NET framework.
-                        I have a good programming experience in <b>C</b> as i used it extensively in my OS course!
-                        I have developed responsive websites using <b>JavaScript, HTML, CSS and Bootstrap</b>. I am fairly experienced with
-                        source code management tools like <b>Git</b> and am proficient with IDE's like <b>Eclipse</b>, editor's like <b>VS Code</b> and other tools.
-                        I have some experience writing <b>Concurrent programs</b> and <b>Kernel level programming</b> through my OS class and have also
-                        implemented different data structures in Java like <b>Dynamic Arrays, Linked Lists, Trees, Graphs, Hash Table,</b> etc. I have also written
-                        <b>Assembly language</b> code for MIPS architecture and have good knowledge of computer architecture and organization.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div id="projects" class="row">
-            <div class="col-lg-12">
-                <button id="button3" type="button" class="collapsible">My Projects</button>
-                <div class="content">
-                    <p style="text-align: left; font-family: Arial, Helvetica, sans-serif;font-size: 18px;padding: 5px 10px 5px 10px; color: #2E4053">
-                        Human-Computer Interaction, Spring 2020<br>
-                        •	Rebate Form – Architected a user-centric windows form application. Refined the UI for fast data entry. Applied OOP techniques and programmed the backend for File I/O, validation and feedback. Implemented List for data handling.<br>
-                        •	Rebate Form Analytics – Programmed an application for Experimental UX analysis. Analyzed min., max. and average data entry time for fields, for one record, and between subsequent records, and back keypress count for multiple users.<br>
-                        •	C#.NET, Visual Studio, Git<br><br>
-                        Machine Learning, Spring 2020<br>
-                        •	Implemented the ID3 algorithm to learn decision trees. Used scikit-learn to learn a decision tree for the Haberman Survival dataset (UCI) and visualized it through graphviz. (Python, Scikit-Learn, PyCharm, Jupyter)<br><br>
-                        Virtual Reality, Spring 2020<br>
-                        •	Created a realistic VR environment. Implemented 3D travel techniques and integrated 3D sound using Steam API and VRTK. (C#, Unity, VRTK, HTC Vive, Oculus Rift, 3ds Max)<br><br>
-                        Data Structures and Algorithm Analysis, Fall 2019<br>
-                        •	Implemented a sorting algorithm for Linked List, a Binary Search Tree, Heap Sort algorithm, Dijkstra’s algorithm, Topological ordering algorithm, and a Hash Table to program a Spell Checker, implementing OOP techniques, in Java.<br><br>
-                        Operating System Concepts, Fall 2019<br>
-                        •	Seeking Tutor Problem – Coded a multi-threaded program in C. Implemented a Priority Queue, Stack, and Locks using semaphores. (C, Pthread library, Vi editor, VS Code, Linux, Git)<br>
-                        •	File System Checker – Implemented the Depth-First-Search algorithm to traverse the directory. Wrote a method to extract the on-disk bitmap. (C, gdb, QEMU, Vi editor, VS Code, Linux, Git)<br>
-                        •	Implemented the Lottery Scheduler algorithm in xv6 kernel. (C, gdb, Vi editor, QEMU, Linux)<br>
-                        •	Unix Shell – Programmed a terminal with advanced functionalities like executing parallel commands, File I/O, etc. along with excellent error handling. (C, gdb, VS Code, Linux, Git)<br><br>
-                        Personal Projects<br>
-                        •	Deployed an online chatting application. Implemented the MVC model and REST API. (ReactJS, ExpressJS, NodeJS, MongoDB, JavaScript, Bootstrap, HTML5, CSS3, npm, REST Client, Git)<br>
-                        •	Student Catalog – Applied OOP concepts to program a responsive web application for providing CRUD functionality for handling student profiles. (Java, JSP, Servlets, JDBC, MySQL, JavaScript, Bootstrap, HTML5, CSS3, Tomcat, Eclipse, Git)<br>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- extra curricular -->
-        <div id="extracuc" class="row">
-            <div class="col-lg-12">
-                <button id="button4" type="button" class="collapsible">My Achievements and Extra-Curricular's</button>
-                <div class="content">
-                    <p style="text-align: left; font-family: Arial, Helvetica, sans-serif;font-size: 18px;padding: 5px 10px 5px 10px; color: #2E4053">
-                        > I am a member of various student organizations at UT Dallas like <b>Association of Computing Machinery, User Experience Club, and Artificial
-                           Intelligence Society</b>. <br>
-                        > I worked as a <b>Co-Editor</b> at <b>Learn Ship Design</b>, a student initiative at Indian Maritime University, Visakhapatnam, 2015-19.
-                           Also, i <b>Co-founded</b> the Technical Magazine <b>'Navisieger'</b> (link: https://issuu.com/learnshipdesign/docs/final_magazine_2)<br>
-                        > I worked as a <b>Team Coordinator</b> at college Annual festival 'Shrestha' and also at <b>TEDx IMU Visakhapatnam</b>.<br>
-                        > I actively <b>volunteered</b> at Social Service Fair, Visakhapatnam which was organized by United Way Hyderabad in 2018.<br>
-                        > As a NSS (National Service Scheme, Govt. of India) candidate, I completed 240 hours of Social Service in Visakhapatnam and also secured 2nd
-                           position in Extra Academic Activities, 2015-17.<br>
-                        > I was awarded with the title of <b>'Best Drawing Artist'</b> at City Montessori School, Indira Nagar, Lucknow, in 2011.<br>
-                        > I secured 2nd position in 'Indo-Swiss Painting Contest' organized by The Embassy of Switzerland in India, in 2009.<br>
-                        > I secured 3rd position in 'Sketch a Scientoon Contest' organized by Regional Science City, Lucknow, in 2009.<br>
-                        > I was awarded the tile of <b>'Best Drawing Artist of Lucknow'</b> by Devansh Foundation, Lucknow, in 2007.<br>
-                        Apart from these, I have also participated in various competitions and have actively volunteered in Social Service events!
-                    </p>
-                </div>
-            </div>
-        </div>
+    </div>
 
 
-    </body>
-
-    <footer class="footer">
-        <div class="row">
-            <div id="contact" class="col-lg-12">
-                <a href="https://www.linkedin.com/in/kushagragupta95" target="_blank"><img id="linkedin" src="Images/linkedin.png" alt="linkedin"></a>
-                <a href="https://www.github.com/gKushagra" target="_blank"><img id="git" src="Images/github.png" alt="github"></a>
-                <a href="https://www.hackerrank.com/gKushagra31" target="_blank"><img id="hacker" src="Images/hackerrank.png" alt="hackerrank"></a>
-                <a href="https://www.facebook.com/profile.php?id=100010244286361" target="_blank"><img id="fb" src="Images/facebook.png" alt="facebook"></a>
-            </div>
-        </div>
-
-    </footer>
-
-    <script src="JavaScript/collapsible.js"></script>
-
+    <script src="./JavaScript/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous">
-
-    </script>
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous">
-
-    </script>
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous">
+        crossorigin="anonymous"></script>
 
-    </script>
+</body>
+
 </html>
