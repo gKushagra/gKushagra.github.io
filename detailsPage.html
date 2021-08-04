@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Images/profile.ico" type="ico">
+    <link rel="icon" href="./Images/file-earmark-person.svg" type="image/svg">
     <title>Profile</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -38,10 +38,17 @@
                     <nav>
                         <!-- List -->
                         <ul id="nav-list">
-                            <li><a href="javascript:window.onclick=displayProjects()">Projects</a></li>
-                            <li><a href="javascript:window.onclick=displayEducation()">Education</a></li>
-                            <li><a href="./Docs/pdf1.pdf" target="_blank">Resume</a></li>
-                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScT75h-GG0wehBKPcu_jERbolat1wQvJ2ZDGEKmkwfT-PGYhg/viewform?embedded=true"
+                            <li>
+                                <a href="javascript:window.onclick=displayProjects()">Projects</a>
+                            </li>
+                            <li>
+                                <a href="javascript:window.onclick=displayEducation()">Education</a>
+                            </li>
+                            <li>
+                                <a href="./Docs/KushagraGupta-Resume.pdf" target="_blank">Resume</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScT75h-GG0wehBKPcu_jERbolat1wQvJ2ZDGEKmkwfT-PGYhg/viewform?embedded=true"
                                     target="_black">Contact</a>
                             </li>
                         </ul>
@@ -67,12 +74,14 @@
                         <div class="col-md-8" id="icons-subdiv">
                             <ul id="footer-list">
                                 <li>
-                                    <a href="https://www.linkedin.com/in/kushagragupta95" target="_blank"><img
-                                            src="./Images/linkedin.png"></a>
+                                    <a href="https://www.linkedin.com/in/kushagragupta95" target="_blank">
+                                        <img src="./Images/linkedin.svg" width="32px" alt="LinkedIn">
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/gKushagra" target="_blank"><img
-                                            src="./Images/github.png"></a>
+                                    <a href="https://github.com/gKushagra" target="_blank">
+                                        <img src="./Images/github.svg" width="32px" alt="Github">
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -91,6 +100,9 @@
                     <div class="row" id="projects">
                         <h3>Academic</h3><br>
                         <ul id="projects-list">
+                            <li>
+                                <b>Last Updated: May 2020</b>
+                            </li>
                             <!-- DS -->
                             <li>
                                 <p><b>Data Structures and Algorithm Analysis</b></p>
@@ -98,7 +110,7 @@
                                     to build a Spell Checker Program. <br>
                                     Language: Java
                                 </p>
-                                <a href=""><img src="./Images/github.png" alt=""> Code</a>
+                                <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
                             </li>
                             <!-- OS -->
                             <li>
@@ -118,7 +130,7 @@
                                             Implemented a Priority Queue, and Locks using semaphores and Pthread library
                                             in
                                             C. </p>
-                                        <a href=""><img src="./Images/github.png" alt=""> Code</a>
+                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
                                     </li>
                                     <li>
                                         <p><b>File System Checker</b> <br>
@@ -126,16 +138,16 @@
                                             structure and find any
                                             inconsistencies in the file system.
                                             Language: C</p>
-                                        <a href=""><img src="./Images/github.png" alt=""> Code</a>
+                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
                                     </li>
                                     <li>
                                         <p>Implemented a Lottery Scheduler in xv6 OS kernel.</p>
-                                        <a href=""><img src="./Images/github.png" alt=""> Code</a>
+                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
                                     </li>
                                     <li>
                                         <p><b>Unix Shell</b><br>
                                             Programmed a Command Line Interpreter for xv6 operating system.</p>
-                                        <a href=""><img src="./Images/github.png" alt=""> Code</a>
+                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
                                     </li>
                                 </ul>
                             </li>
@@ -151,7 +163,7 @@
                                             backend for File I/O, data validation and proper feedback.
                                             Language: C#, .NET framework.
                                         </p>
-                                        <a href=""><img src="./Images/github.png" alt=""> Code</a>
+                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
                                     </li>
                                     <li>
                                         <p>
@@ -167,7 +179,7 @@
                                             them.
                                             Language and tools: Java, Android Studio, Android mobile for testing.
                                         </p>
-                                        <a href=""><img src="./Images/github.png" alt=""> Code</a>
+                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
                                     </li>
                                 </ul>
                             </li>
@@ -194,13 +206,16 @@
                         <h3>Self Learning and Practice</h3><br>
                         <ul id="personal-projects-list">
                             <li>
+                                <b>Last Updated: May 2020</b>
+                            </li>
+                            <li>
                                 <p><b>Trackit</b></p>
                                 <p>Programmed a web application with signup, signin, logout, and session functionality.
                                     Defined a user model and connected the application to MongoDB Atlas to save user
                                     credentials with encryption. <br>
                                     Language and Tools: Node, Express, MongoDB, EJS, HTML, CSS, VS Code.
                                 </p>
-                                <a href=""><img src="./Images/github.png" alt=""> Code</a>
+                                <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
                             </li>
                             <li>
                                 <p><b>Find-ur-Resto</b></p>
@@ -211,7 +226,7 @@
                                     and Maps JS API to draw a map canvas and populate markers (restaurants) on it.
                                     Languages and tools: JavaScript, HTML, CSS, VS Code.
                                 </p>
-                                <a href=""><img src="./Images/github.png" alt=""> Code</a>
+                                <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
                             </li>
                         </ul>
                     </div>
@@ -219,18 +234,33 @@
                     <div class="row" id="education">
                         <h3>College</h3><br>
                         <ul id="clg-list">
-                            <li><b>The University of Texas at Dallas</b><br>Master of Science in Computer
-                                Science<br>Spring
-                                2021</li>
+                            <li>
+                                <b>Last Updated: July 2021</b>
+                            </li>
+                            <li>
+                                <span><b>Master of Science in Computer Science</b></span><br>
+                                <span>The University of Texas at Dallas, Richardson, TX 75080</span><br>
+                                <span>December 2021</span>
+                            </li>
                         </ul>
                         <br>
                         <br>
                         <h3>Courses</h3><br>
                         <ul id="courses-list">
-                            <li>Algorithm Analysis and Data Structures</li>
+                            <li>
+                                <b>Last Updated: July 2021</b>
+                            </li>
+                            <li>Cloud Computing</li>
+                            <li>Big Data Analytics and Management</li>
+                            <li>Distributed Computing</li>
+                            <li>Conputer Animation and Gaming</li>
+                            <li>Database Design</li>
+                            <li>Design and Analysis of Algorithms</li>
+                            <li>Computer Graphics</li>
                             <li>Machine Learning</li>
                             <li>Human Computer Interaction</li>
                             <li>Virtual Reality</li>
+                            <li>Algorithm Analysis and Data Structures</li>
                             <li>Operating System Concepts</li>
                             <li>Computer Architecture</li>
                             <li>Discrete Structures</li>
@@ -239,6 +269,9 @@
                         <br>
                         <h3>Organizations</h3><br>
                         <ul id="org-list">
+                            <li>
+                                <b>Last Updated: May 2020</b>
+                            </li>
                             <li>Active member of the Association for Computing Machinery.</li>
                             <li>Active member of the User Experience Club.</li>
                             <li>Active member of the Artificial Intelligence Society.</li>
@@ -247,6 +280,9 @@
                         <br>
                         <h3>Workshops</h3><br>
                         <ul id="workshops-list">
+                            <li>
+                                <b>Last Updated: May 2020</b>
+                            </li>
                             <li>Full Stack Web Development Workshop, Thanksgiving break, Fall 2019.</li>
                         </ul>
                     </div>
