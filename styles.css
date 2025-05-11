@@ -64,6 +64,17 @@ body {
   50% { border-color: white }
 }
 
+#intro {
+  display: none;
+  padding: 20px;
+  text-align: left;
+}
+
+#intro-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 @media (max-width: 600px) {
   #intro {
     padding: 20px 0;

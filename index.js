@@ -5,12 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('DOM loaded');
   
   // Hide all elements initially
-  const elements = ['line-1', 'line-2', 'line-3', 'intro'];
+  const elements = ['line1', 'line2', 'line3', 'intro'];
   elements.forEach(id => {
     const element = document.getElementById(id);
     if (element) {
       element.style.display = 'none';
-      element.style.opacity = '0';
     }
   });
   
@@ -44,6 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 const line3 = document.getElementById('line3');
                 line3.style.display = 'block';
                 line3.classList.add('typewriter', 'typewriter-3');
+                
+                // After third line is done, keep it visible for 2 seconds
+                setTimeout(() => {
+                  // Add a pause before showing intro text
+                  setTimeout(() => {
+                    line3.style.display = 'none';
+                    const intro = document.getElementById('intro');
+                    intro.style.display = 'block';
+                  }, 1000); // 1 second pause after third line disappears
+                }, 2000); // Keep third line visible for 2 seconds
               }, 500);
             }, 2000);
           }, 2000);
