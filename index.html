@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./Images/file-earmark-person.svg" type="image/svg">
     <title>Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/index.css">
 </head>
 
 <body>
-
-    <div class="row">
-        <p id="line-1">Hey!</p>
-        <p id="line-2">Thanks for stopping by!</p>
-        <p id="line-3">Let me introduce myself!</p>
+    <div class="container">
+        <div id="line1" class="text">Hey!</div>
+        <div id="line2" class="text">Thanks for stopping by!</div>
+        <div id="line3" class="text">Let me introduce myself!</div>
         <div id="intro">
             <p id="intro-text">
-                My name is Kushagra and I take interest in <b>Fullstack Application Development</b>.<br><br>
-                I feel confident writing code in <b>Java</b>, <b>JavaScript</b> and <b>Node.js</b>. 
-                I have hands-on experience in frontend frameworks like <b>Angular</b> and <b>React</b>, 
-                in building <b>RESTful Web Services</b> using <b>Node.js</b>, <b>Express.js</b>, and using JavaScript libraries.
-                For most of my projects, I have used <b>PostgreSQL</b>, <b>MongoDB</b> and <b>MySQL</b>.
-                I also have some experience in building CI/CD pipelines using automation tools, and utilizing 
-                cloud services like AWS EC2, AWS RDS, and Azure VM.
-                I am developing my skills on cloud computing.
-                <br><br>
+                My name is Kushagra, and I enjoy building <b>scalable, high-performance systems</b> for the web.<br><br>
+                I'm comfortable writing code in <b>C#</b>, <b>Java</b>, <b>JavaScript</b>, <b>Python</b>, and
+                <b>Node.js</b>, and I've built frontend applications using <b>Angular</b>, <b>React</b>, and
+                <b>Next.js</b>.
+                On the backend, I work with <b>.NET</b>, <b>Spring Boot</b>, <b>Express.js</b>, and <b>FastAPI</b> to
+                build RESTful APIs and event-driven microservices.<br><br>
+                I have hands-on experience with relational and NoSQL databases like <b>PostgreSQL</b>, <b>MySQL</b>,
+                <b>MongoDB</b>, <b>Cassandra</b>, and <b>ClickHouse</b>.
+                I've also worked with data engineering tools like <b>Databricks</b>, <b>Apache Spark</b>, and
+                <b>Kafka</b> for real-time data processing.<br><br>
+                I'm also interested in <b>cloud-native</b> architectures and have built and deployed applications using
+                <b>AWS</b>, <b>Azure</b>, <b>DigitalOcean</b>, and <b>Linode</b>.
+                I like building end-to-end CI/CD pipelines and experimenting with new tools like <b>LangChain</b> and
+                <b>LLMs</b> for AI-powered automation.<br><br>
                 I like to sketch sometimes!<br><br>
                 Sounds good?
                 <a href="./detailsPage.html" id="">Click</a> to know more.
@@ -35,16 +39,56 @@
         </div>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Start with a delay
+            setTimeout(() => {
+                // Show first line with typewriter effect
+                const line1 = document.getElementById('line1');
+                line1.style.display = 'block';
+                line1.classList.add('typewriter', 'typewriter-1');
+                
+                // After first line is done, wait, then show second line
+                setTimeout(() => {
+                    // Keep first line visible for 2 seconds
+                    setTimeout(() => {
+                        line1.style.display = 'none';
+                        
+                        // Add a pause before showing second line
+                        setTimeout(() => {
+                            const line2 = document.getElementById('line2');
+                            line2.style.display = 'block';
+                            line2.classList.add('typewriter', 'typewriter-2');
+                            
+                            // After second line is done, wait, then show third line
+                            setTimeout(() => {
+                                // Keep second line visible for 2 seconds
+                                setTimeout(() => {
+                                    line2.style.display = 'none';
+                                    
+                                    // Add a pause before showing third line
+                                    setTimeout(() => {
+                                        const line3 = document.getElementById('line3');
+                                        line3.style.display = 'block';
+                                        line3.classList.add('typewriter', 'typewriter-3');
+                                    }, 500);
+                                }, 2000);
+                            }, 2000);
+                        }, 500);
+                    }, 2000);
+                }, 1000);
+            }, 1000);
+        });
+    </script>
 
     <script src="./JavaScript/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 
 </body>

@@ -1,38 +1,72 @@
 body {
+  background-color: #1a1a1a;
+  color: white;
   font-family: Consolas, monaco, monospace;
-  background-color: white;
-  overflow: auto;
-  letter-spacing: 2px;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#line-1,
-#line-2,
-#line-3 {
-  color: #336699;
+.container {
+  text-align: center;
 }
 
-#line-1 {
-  font-size: 52px;
-}
-
-#line-2,
-#line-3 {
+.text {
   font-size: 42px;
+  margin: 20px 0;
+  display: none;
 }
 
-#intro {
-  padding: 200px;
-  font-size: 18px;
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  width: 0;
 }
 
-#intro-text {
-  padding: 50px;
-  /* border: 1px solid #e7e7e7; */
+.typewriter-1 {
+  animation: typing1 1s steps(5, end) forwards,
+             blink-caret .75s step-end infinite;
+}
+
+.typewriter-2 {
+  animation: typing2 2s steps(23, end) forwards,
+             blink-caret .75s step-end infinite;
+}
+
+.typewriter-3 {
+  animation: typing3 2s steps(26, end) forwards,
+             blink-caret .75s step-end infinite;
+}
+
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 5ch }
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 23ch }
+}
+
+@keyframes typing3 {
+  from { width: 0 }
+  to { width: 26ch }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
 }
 
 @media (max-width: 600px) {
   #intro {
-    padding: 20px;
+    padding: 20px 0;
   }
   #intro-text {
     padding: 10px;
