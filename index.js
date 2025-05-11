@@ -13,6 +13,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   
+  // The intro text as a string (with <br><br> for line breaks)
+  const introString = `My name is Kushagra, and I enjoy building <b>scalable, high-performance systems</b> for the web.<br><br>
+I'm comfortable writing code in <b>C#</b>, <b>Java</b>, <b>JavaScript</b>, <b>Python</b>, and <b>Node.js</b>, and I've built frontend applications using <b>Angular</b>, <b>React</b>, and <b>Next.js</b>.<br><br>
+On the backend, I work with <b>.NET</b>, <b>Spring Boot</b>, <b>Express.js</b>, and <b>FastAPI</b> to build RESTful APIs and event-driven microservices.<br><br>
+I have hands-on experience with relational and NoSQL databases like <b>PostgreSQL</b>, <b>MySQL</b>, <b>MongoDB</b>, <b>Cassandra</b>, and <b>ClickHouse</b>.<br><br>
+I've also worked with data engineering tools like <b>Databricks</b>, <b>Apache Spark</b>, and <b>Kafka</b> for real-time data processing.<br><br>
+I'm also interested in <b>cloud-native</b> architectures and have built and deployed applications using <b>AWS</b>, <b>Azure</b>, <b>DigitalOcean</b>, and <b>Linode</b>.<br><br>
+I like building end-to-end CI/CD pipelines and experimenting with new tools like <b>LangChain</b> and <b>LLMs</b> for AI-powered automation.<br><br>
+I like to sketch sometimes!<br><br>Sounds good?`;
+
+  // Typewriter effect for the intro text
+  function typeWriterEffect(element, text, speed, callback) {
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        // Handle HTML tags
+        if (text[i] === '<') {
+          const closeIdx = text.indexOf('>', i);
+          if (closeIdx !== -1) {
+            element.innerHTML += text.substring(i, closeIdx + 1);
+            i = closeIdx + 1;
+          } else {
+            element.innerHTML += text[i];
+            i++;
+          }
+        } else {
+          element.innerHTML += text[i];
+          i++;
+        }
+        setTimeout(type, speed);
+      } else if (callback) {
+        callback();
+      }
+    }
+    type();
+  }
+
   // Start with a delay
   setTimeout(() => {
     // Show first line with typewriter effect
@@ -51,6 +88,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     line3.style.display = 'none';
                     const intro = document.getElementById('intro');
                     intro.style.display = 'block';
+                    const introText = document.getElementById('intro-text');
+                    introText.innerHTML = '';
+                    // Start typewriter effect for intro text
+                    typeWriterEffect(introText, introString, 18, () => {
+                      // Show the link after the text is done
+                      document.getElementById('intro-link').style.display = 'block';
+                    });
                   }, 1000); // 1 second pause after third line disappears
                 }, 2000); // Keep third line visible for 2 seconds
               }, 500);
