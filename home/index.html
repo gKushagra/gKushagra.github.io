@@ -4,305 +4,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Images/file-earmark-person.svg" type="image/svg">
-    <title>Profile</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./CSS/detailsPage.css">
+    <meta name="description" content="Kushagra's personal webpage - A showcase of my work, skills, and journey in technology and development.">
+    <meta name="keywords" content="Kushagra, developer, webpage, technology, software engineer">
+    <meta name="author" content="Kushagra">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="dark">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gkushagra.github.io/">
+    <meta property="og:title" content="Kushagra's Webpage">
+    <meta property="og:description" content="Welcome to my personal webpage - A showcase of my work, skills, and journey in technology and development.">
+    <meta property="og:image" content="../assets/images/gKushagra.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gkushagra.github.io/">
+    <meta property="twitter:title" content="Kushagra's Webpage">
+    <meta property="twitter:description" content="Welcome to my personal webpage - A showcase of my work, skills, and journey in technology and development.">
+    <meta property="twitter:image" content="../assets/images/gKushagra.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/bug.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../assets/images/terminal.svg">
+    
+    <title>Kushagra's Webpage</title>
+    
+    <!-- Bootstrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="row">
-        <!-- Side Nav Bar -->
-        <div class="col-md-3" id="column1">
-            <!-- Profile Photo -->
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <img src="./Images/gKushagra.jpg" alt="Profile Photo" id="profile-photo">
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-            <!-- Name -->
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8" id="name">
-                    <p>Kushagra Gupta</p>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            <!-- Navigation List -->
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10" id="nav-col">
-                    <nav>
-                        <!-- List -->
-                        <ul id="nav-list">
-                            <li>
-                                <a href="javascript:window.onclick=displayProjects()">Projects</a>
-                            </li>
-                            <li>
-                                <a href="javascript:window.onclick=displayEducation()">Education</a>
-                            </li>
-                            <li>
-                                <a href="./Docs/KushagraGupta-Resume.pdf" target="_blank">Resume</a>
-                            </li>
-                            <li>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScT75h-GG0wehBKPcu_jERbolat1wQvJ2ZDGEKmkwfT-PGYhg/viewform?embedded=true"
-                                    target="_black">Contact</a>
-                            </li>
-                        </ul>
-                        <!-- Drop down list -->
-                        <select name="nav-select" onchange="selectClick()" id="nav-select">
-                            <option value="projects">Projects</option>
-                            <option value="education">Education</option>
-                            <option value="./Docs/pdf1.pdf">Resume</option>
-                            <option
-                                value="https://docs.google.com/forms/d/e/1FAIpQLScT75h-GG0wehBKPcu_jERbolat1wQvJ2ZDGEKmkwfT-PGYhg/viewform?embedded=true">
-                                Contact</option>
-                        </select>
-                    </nav>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-            <!-- Social media Icons -->
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8" id="social-media-icons">
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8" id="icons-subdiv">
-                            <ul id="footer-list">
-                                <li>
-                                    <a href="https://www.linkedin.com/in/kushagragupta95" target="_blank">
-                                        <img src="./Images/linkedin.svg" width="32px" alt="LinkedIn">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/gKushagra" target="_blank">
-                                        <img src="./Images/github.svg" width="32px" alt="Github">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-2"></div>
+    <div class="terminal-fullscreen">
+        <div class="terminal-real">
+            <div id="terminal-prompt-line"><span class="prompt">kushagra@www:~$</span> ls</div>
+            <div id="terminal-output-area">
+                <pre class="ls-pre" id="ls-output"><code>
+<span class="folder" id="projects-folder">Projects</span> <span class="folder" id="education-folder">Education</span> <span class="folder">Resume</span> <span class="folder">Contact</span>
+</code></pre>
+                <div id="projects" style="display:none;">
+                  <div class="man-page">
+                    <div class="man-header">
+                      <span>PROJECTS(1)</span>
+                      <span>User Commands</span>
+                      <span>PROJECTS(1)</span>
                     </div>
+                    <div class="man-section"><span class="man-section-title">NAME</span></div>
+                    <div class="man-indent">projects - list of selected works by Kushagra</div>
+                    <div class="man-section"><span class="man-section-title">SYNOPSIS</span></div>
+                    <div class="man-indent">projects</div>
+                    <div class="man-section"><span class="man-section-title">DESCRIPTION</span></div>
+                    <div class="man-indent"><span class="man-section-highlight">Recent Projects:</span></div>
+                    <div class="man-divider">----------------------------------------</div>
+                    <div class="man-project">
+                      <span class="man-project-title">1. AI Agent for Automated Web Interactions (Jan 2025 - Present)</span>
+                      <div class="man-hanging">Built an AI-powered agent to simulate user interactions on websites. Leveraged LangChain, Playwright, and open-source LLMs to enable real-time web navigation, form submissions, and content extraction. Implemented ReAct-style planning to dynamically adjust actions based on page context, and integrated retrieval-augmented generation (RAG) for smarter decision-making. Focused on creating a flexible, reusable agent capable of handling a wide range of site behaviors, including multi-step workflows and error recovery.</div>
+                      <div class="man-hanging"><span class="man-link-label">GitHub:</span> <a class="man-link" href="https://github.com/gKushagra/agent-web-demo" target="_blank">https://github.com/gKushagra/agent-web-demo</a></div>
+                    </div>
+                    <div class="man-project">
+                      <span class="man-project-title">2. Job Application Tracker (Aug 2021 - Aug 2021)</span>
+                      <div class="man-hanging">Built a cross-platform desktop application for managing job applications and resumes, using Angular and Electron.js. Includes features for tracking application status, storing resume versions, and organizing job leads in a single, easy-to-use interface. Focused on delivering a responsive, offline-capable experience with seamless desktop integration.</div>
+                      <div class="man-hanging"><span class="man-link-label">GitHub:</span> <a class="man-link" href="https://github.com/gKushagra/application-tracking-ng" target="_blank">https://github.com/gKushagra/application-tracking-ng</a></div>
+                    </div>
+                    <div class="man-project">
+                      <span class="man-project-title">3. Cloud Storage Platform (Jul 2021 - Jul 2021)</span>
+                      <div class="man-hanging">Built a cloud storage platform inspired by Google Drive and Dropbox, exposing a UNIX-like file system through a modern web interface. Implemented core features like file upload, download, renaming, deletion, and directory management. Developed the backend with Node.js and MySQL for efficient file handling and metadata storage, and used Angular for a responsive, intuitive frontend. Focused on performance, security, and scalability to handle large volumes of data.</div>
+                      <div class="man-hanging"><span class="man-link-label">GitHub:</span> <a class="man-link" href="https://github.com/gKushagra/drive-solution" target="_blank">https://github.com/gKushagra/drive-solution</a></div>
+                    </div>
+                    <div class="man-project">
+                      <span class="man-project-title">4. Realtime Collaboration Platform (May 2021 - May 2021)</span>
+                      <div class="man-hanging">Built a real-time collaboration platform using Angular, Node.js, and MongoDB, leveraging WebRTC for low-latency audio/video calls and screen sharing, and WebSockets for real-time messaging. Designed to handle high-concurrency chat and file sharing, with a focus on seamless user experience and scalable architecture. Developed end-to-end REST APIs, implemented secure data handling, and optimized real-time performance for responsive communication.</div>
+                      <div class="man-hanging"><span class="man-link-label">GitHub:</span> <a class="man-link" href="https://github.com/gKushagra/social-network" target="_blank">https://github.com/gKushagra/social-network</a></div>
+                    </div>
+                    <div class="man-indent"><span class="man-section-highlight">Self Learning and Practice (Last Updated: May 2020):</span></div>
+                    <div class="man-divider">----------------------------------------</div>
+                    <div class="man-project">
+                      <span class="man-project-title">5. Trackit</span>
+                      <div class="man-hanging">Programmed a web application with signup, signin, logout, and session functionality. Defined a user model and connected the application to MongoDB Atlas to save user credentials with encryption. Language and Tools: Node, Express, MongoDB, EJS, HTML, CSS, VS Code.</div>
+                    </div>
+                    <div class="man-project">
+                      <span class="man-project-title">6. Find-ur-Resto</span>
+                      <div class="man-hanging">Programmed a website to look for restaurants nearby depending upon cuisine. Used Yelp API to fetch restaurants data, Geolocation and Geocoding API to locate the user, and Maps JS API to draw a map canvas and populate markers (restaurants) on it. Languages and tools: JavaScript, HTML, CSS, VS Code.</div>
+                    </div>
+                    <div class="man-indent"><span class="man-section-highlight">Academic Projects (Last Updated: May 2020):</span></div>
+                    <div class="man-divider">----------------------------------------</div>
+                    <div class="man-project">
+                      <span class="man-project-title">7. Data Structures and Algorithm Analysis</span>
+                      <div class="man-hanging">Implemented Dijkstra's Algorithm, Topological Ordering Algorithm and Hash Table to build a Spell Checker Program. Language: Java</div>
+                    </div>
+                    <div class="man-project">
+                      <span class="man-project-title">8. Operating System Concepts</span>
+                      <div class="man-hanging">- Seeking Tutor Program: Multi-threaded C program. Problem Statement: A student visits mentoring center to seek help. If there is space in waiting area, the student takes a seat and the coordinator notifies the tutors that a student has arrived. If a tutor is not tutoring, he lets the student in. If there are no vacant seats in waiting area, the student leaves and returns after sometime. Implemented a Priority Queue, and Locks using semaphores and Pthread library in C.</div>
+                      <div class="man-hanging">- File System Checker: Implemented a Depth First Search algorithm to scan through the directory structure and find any inconsistencies in the file system. Language: C</div>
+                      <div class="man-hanging">- Implemented a Lottery Scheduler in xv6 OS kernel.</div>
+                      <div class="man-hanging">- Unix Shell: Programmed a Command Line Interpreter for xv6 operating system.</div>
+                    </div>
+                    <div class="man-project">
+                      <span class="man-project-title">9. Human Computer Interaction</span>
+                      <div class="man-hanging">- Rebate Form: A user centric data entry windows application. Programmed the UI for faster data entry and the backend for File I/O, data validation and proper feedback. Language: C#, .NET framework.</div>
+                      <div class="man-hanging">- Android Game: Programmed an Android game to touch shapes of correct type and color. Instructions are not fixed and are generated randomly. There are 4 activities: show top 12 scores, main activity with instructions, game, and add a score to the high scores list. Built a Custom View for the Game Play Area. Wrote an algorithm to avoid overlapping of shapes while generating them. Language and tools: Java, Android Studio, Android mobile for testing.</div>
+                    </div>
+                    <div class="man-project">
+                      <span class="man-project-title">10. Virtual Grocery Store</span>
+                      <div class="man-hanging">Created a 3D Virtual Environment in Unity. Added 3D sounds to the environment using Steam API. Programmed the controllers to implement a travel technique to browse through the store and to interact with objects. Programmed the 3D objects to show a UI whenever a user interacts with them. Added animation to the shopping cart to simulate adding and removing items. Final task is to add a simulated billing desk. Language and Tools: C#, Unity, Steam, VRTK.</div>
+                    </div>
+                    <div class="man-indent man-footer">Press <b>q</b> or <span class="back-link">Back</span> to return.</div>
+                  </div>
                 </div>
-                <div class="col-md-2"></div>
+                <div id="education" style="display:none;">
+                  <div class="man-page">
+                    <div class="man-header">
+                      <span>EDUCATION(1)</span>
+                      <span>User Commands</span>
+                      <span>EDUCATION(1)</span>
+                    </div>
+                    <div class="man-section"><span class="man-section-title">NAME</span></div>
+                    <div class="man-indent">education - educational background and activities of Kushagra</div>
+                    <div class="man-section"><span class="man-section-title">SYNOPSIS</span></div>
+                    <div class="man-indent">education</div>
+                    <div class="man-section"><span class="man-section-title">DESCRIPTION</span></div>
+                    <div class="man-indent"><span class="man-section-highlight">College:</span></div>
+                    <div class="man-divider">----------------------------------------</div>
+                    <div class="man-hanging">Master of Science in Computer Science</div>
+                    <div class="man-hanging">The University of Texas at Dallas, Richardson, TX 75080</div>
+                    <div class="man-hanging">December 2021</div>
+                    <div class="man-indent"><span class="man-section-highlight">Courses:</span></div>
+                    <div class="man-divider">----------------------------------------</div>
+                    <div class="man-hanging">Algorithm Analysis and Data Structures (CS 5343) - UT Dallas</div>
+                    <div class="man-hanging">Big Data Analytics and Management (CS 6350) - UT Dallas</div>
+                    <div class="man-hanging">Cloud Computing (CS 6343) - UT Dallas</div>
+                    <div class="man-hanging">Computer Animation and Gaming (CS 6323) - UT Dallas</div>
+                    <div class="man-hanging">Computer Architecture (CS 5330) - UT Dallas</div>
+                    <div class="man-hanging">Computer Graphics (CS 6366) - UT Dallas</div>
+                    <div class="man-hanging">Database Design (CS 6360) - UT Dallas</div>
+                    <div class="man-hanging">Design and Analysis of Computer Algorithms (CS 6363) - UT Dallas</div>
+                    <div class="man-hanging">Discrete Structures (CS 5333) - UT Dallas</div>
+                    <div class="man-hanging">Distributed Computing (CS 6380) - UT Dallas</div>
+                    <div class="man-hanging">Human Computer Interaction (CS 6326) - UT Dallas</div>
+                    <div class="man-hanging">Machine Learning (CS 6375) - UT Dallas</div>
+                    <div class="man-hanging">Operating System Concepts (CS 5348) - UT Dallas</div>
+                    <div class="man-hanging">Virtual Reality (CS 6334) - UT Dallas</div>
+                    <div class="man-indent"><span class="man-section-highlight">Organizations:</span></div>
+                    <div class="man-divider">----------------------------------------</div>
+                    <div class="man-hanging">Active member of the Association for Computing Machinery.</div>
+                    <div class="man-hanging">Active member of the User Experience Club.</div>
+                    <div class="man-hanging">Active member of the Artificial Intelligence Society.</div>
+                    <div class="man-indent"><span class="man-section-highlight">Workshops:</span></div>
+                    <div class="man-divider">----------------------------------------</div>
+                    <div class="man-hanging">Full Stack Web Development Workshop, Thanksgiving break, Fall 2019.</div>
+                    <div class="man-indent man-footer">Press <b>q</b> or <span class="back-link">Back</span> to return.</div>
+                    <div class="man-hanging">Last Updated: May 15, 2024</div>
+                  </div>
+                </div>
             </div>
         </div>
-        <!-- Information display area -->
-        <div class="col-md-8">
-            <div class="row">
-                <div class="col-md-"></div>
-                <div class="col-md-10" id="info-display">
-                    <!-- Projects -->
-                    <div class="row" id="projects">
-                        <h3>Academic</h3><br>
-                        <ul id="projects-list">
-                            <li>
-                                <b>Last Updated: May 2020</b>
-                            </li>
-                            <!-- DS -->
-                            <li>
-                                <p><b>Data Structures and Algorithm Analysis</b></p>
-                                <p>Implemented Dijkstra's Algorithm, Topological Ordering Algorithm and Hash Table
-                                    to build a Spell Checker Program. <br>
-                                    Language: Java
-                                </p>
-                                <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
-                            </li>
-                            <!-- OS -->
-                            <li>
-                                <p><b>Operating System Concepts</b></p>
-                                <ul>
-                                    <li>
-                                        <p><b>Seeking Tutor Program</b>: Multi-threaded C program. <br>
-                                            Problem Statement: A student visits mentoring center to
-                                            seek help. If there is space in waiting area, the student takes a seat and
-                                            the
-                                            coordinator
-                                            notifies the tutors that a student has arrived. If a tutor is not tutoring,
-                                            he
-                                            lets the student in.
-                                            If there are no vacant seats in waiting area, the student leaves and returns
-                                            after sometime. <br>
-                                            Implemented a Priority Queue, and Locks using semaphores and Pthread library
-                                            in
-                                            C. </p>
-                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
-                                    </li>
-                                    <li>
-                                        <p><b>File System Checker</b> <br>
-                                            Implemented a Depth First Search algorithm to scan through the directory
-                                            structure and find any
-                                            inconsistencies in the file system.
-                                            Language: C</p>
-                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
-                                    </li>
-                                    <li>
-                                        <p>Implemented a Lottery Scheduler in xv6 OS kernel.</p>
-                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
-                                    </li>
-                                    <li>
-                                        <p><b>Unix Shell</b><br>
-                                            Programmed a Command Line Interpreter for xv6 operating system.</p>
-                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- HCI -->
-                            <li>
-                                <p><b>Human Computer Interaction</b></p>
-                                <ul>
-                                    <li>
-                                        <p>
-                                            <b>Rebate Form</b> <br>
-                                            A user centric data entry windows application. Programmed the UI for faster
-                                            data entry and the
-                                            backend for File I/O, data validation and proper feedback.
-                                            Language: C#, .NET framework.
-                                        </p>
-                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <b>Android Game</b> <br>
-                                            Programmed an Android game to touch shapes of correct type and color.
-                                            Instruction are not fixed and
-                                            are generated randomly. There are 4 activities. One to show top 12 scores.
-                                            One is the main activity
-                                            with instructions. One for the Game and last one to add a score to the high
-                                            scores list. <br>
-                                            Built a Custom View for the Game Play Area. Wrote an algorithm to avoid
-                                            overlapping of shapes while generating
-                                            them.
-                                            Language and tools: Java, Android Studio, Android mobile for testing.
-                                        </p>
-                                        <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- VR -->
-                            <li>
-                                <p><b>Virtual Grocery Store</b></p>
-                                <p>
-                                    Created a 3D Virtual Environment in Unity. Added 3D sounds to the environment using
-                                    Steam API.
-                                    Programmed the controllers to implement a travel technique to browse through the
-                                    store and to interact with objects.
-                                    Programmed the 3D objects to show a UI whenever a user interacts with them. Added
-                                    animation to the shopping cart
-                                    to simulate adding and removing items. Final task is to add a simulated billing
-                                    desk.
-                                    Language and Tools: C#, Unity, Steam, VRTK.
-                                </p>
-                            </li>
-                        </ul>
-                        <br>
-                        <hr>
-                        <br>
-                        <!-- Personal Projects -->
-                        <h3>Self Learning and Practice</h3><br>
-                        <ul id="personal-projects-list">
-                            <li>
-                                <b>Last Updated: May 2020</b>
-                            </li>
-                            <li>
-                                <p><b>Trackit</b></p>
-                                <p>Programmed a web application with signup, signin, logout, and session functionality.
-                                    Defined a user model and connected the application to MongoDB Atlas to save user
-                                    credentials with encryption. <br>
-                                    Language and Tools: Node, Express, MongoDB, EJS, HTML, CSS, VS Code.
-                                </p>
-                                <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
-                            </li>
-                            <li>
-                                <p><b>Find-ur-Resto</b></p>
-                                <p>
-                                    Programmed a website to look for restaurants nearby depending upon cuisine.
-                                    Used Yelp API to fetch restaurants data, Geolocation and Geocoding API to locate the
-                                    user,
-                                    and Maps JS API to draw a map canvas and populate markers (restaurants) on it.
-                                    Languages and tools: JavaScript, HTML, CSS, VS Code.
-                                </p>
-                                <a href=""><img src="./Images/github.svg" alt="Github"> Code</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Education -->
-                    <div class="row" id="education">
-                        <h3>College</h3><br>
-                        <ul id="clg-list">
-                            <li>
-                                <b>Last Updated: July 2021</b>
-                            </li>
-                            <li>
-                                <span><b>Master of Science in Computer Science</b></span><br>
-                                <span>The University of Texas at Dallas, Richardson, TX 75080</span><br>
-                                <span>December 2021</span>
-                            </li>
-                        </ul>
-                        <br>
-                        <br>
-                        <h3>Courses</h3><br>
-                        <ul id="courses-list">
-                            <li>
-                                <b>Last Updated: July 2021</b>
-                            </li>
-                            <li>Cloud Computing</li>
-                            <li>Big Data Analytics and Management</li>
-                            <li>Distributed Computing</li>
-                            <li>Conputer Animation and Gaming</li>
-                            <li>Database Design</li>
-                            <li>Design and Analysis of Algorithms</li>
-                            <li>Computer Graphics</li>
-                            <li>Machine Learning</li>
-                            <li>Human Computer Interaction</li>
-                            <li>Virtual Reality</li>
-                            <li>Algorithm Analysis and Data Structures</li>
-                            <li>Operating System Concepts</li>
-                            <li>Computer Architecture</li>
-                            <li>Discrete Structures</li>
-                        </ul>
-                        <br>
-                        <br>
-                        <h3>Organizations</h3><br>
-                        <ul id="org-list">
-                            <li>
-                                <b>Last Updated: May 2020</b>
-                            </li>
-                            <li>Active member of the Association for Computing Machinery.</li>
-                            <li>Active member of the User Experience Club.</li>
-                            <li>Active member of the Artificial Intelligence Society.</li>
-                        </ul>
-                        <br>
-                        <br>
-                        <h3>Workshops</h3><br>
-                        <ul id="workshops-list">
-                            <li>
-                                <b>Last Updated: May 2020</b>
-                            </li>
-                            <li>Full Stack Web Development Workshop, Thanksgiving break, Fall 2019.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-        </div>
-        <div class="col-md-1"></div>
     </div>
-
-    <script src="./JavaScript/detailsPage.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script>
+      function setPrompt(text) {
+        document.getElementById('terminal-prompt-line').innerHTML = `<span class="prompt">kushagra@www:~$</span> ${text}`;
+      }
+      function showSection(sectionId) {
+        if (sectionId === 'projects') {
+          setPrompt('man Projects');
+        } else if (sectionId === 'education') {
+          setPrompt('man Education');
+        }
+        document.getElementById('ls-output').style.display = 'none';
+        document.getElementById('projects').style.display = 'none';
+        document.getElementById('education').style.display = 'none';
+        document.getElementById(sectionId).style.display = 'block';
+      }
+      function showTerminal() {
+        setPrompt('ls');
+        document.getElementById('ls-output').style.display = 'block';
+        document.getElementById('projects').style.display = 'none';
+        document.getElementById('education').style.display = 'none';
+      }
+      document.addEventListener("DOMContentLoaded", function() {
+        setPrompt('ls');
+        var projects = document.getElementById("projects-folder");
+        var education = document.getElementById("education-folder");
+        if (projects) {
+          projects.style.cursor = "pointer";
+          projects.addEventListener("click", function() {
+            showSection('projects');
+          });
+        }
+        if (education) {
+          education.style.cursor = "pointer";
+          education.addEventListener("click", function() {
+            showSection('education');
+          });
+        }
+        // Back link and q key
+        document.querySelectorAll('.back-link').forEach(function(link) {
+          link.style.cursor = 'pointer';
+          link.addEventListener('click', showTerminal);
+        });
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'q' && (document.getElementById('projects').style.display === 'block' || document.getElementById('education').style.display === 'block')) {
+            showTerminal();
+          }
+        });
+      });
+    </script>
 </body>
-
 </html>
