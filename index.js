@@ -21,7 +21,7 @@ I have hands-on experience with relational and NoSQL databases like <b>PostgreSQ
 I've also worked with data engineering tools like <b>Databricks</b>, <b>Apache Spark</b>, and <b>Kafka</b> for real-time data processing.<br><br>
 I'm also interested in <b>cloud-native</b> architectures and have built and deployed applications using <b>AWS</b>, <b>Azure</b>, <b>DigitalOcean</b>, and <b>Linode</b>.<br><br>
 I like building end-to-end CI/CD pipelines and experimenting with new tools like <b>LangChain</b> and <b>LLMs</b> for AI-powered automation.<br><br>
-I like to sketch sometimes!<br><br>Sounds good?`;
+I like to sketch sometimes!<br><br>`;
 
   // Typewriter effect for the intro text
   function typeWriterEffect(element, text, speed, callback) {
@@ -42,6 +42,8 @@ I like to sketch sometimes!<br><br>Sounds good?`;
           element.innerHTML += text[i];
           i++;
         }
+        // Scroll to bottom after each character
+        element.parentElement.scrollTop = element.parentElement.scrollHeight;
         setTimeout(type, speed);
       } else if (callback) {
         callback();
@@ -96,7 +98,7 @@ I like to sketch sometimes!<br><br>Sounds good?`;
                       document.getElementById('intro-link').style.display = 'block';
                     });
                   }, 1000); // 1 second pause after third line disappears
-                }, 2000); // Keep third line visible for 2 seconds
+                }, 2000);
               }, 500);
             }, 2000);
           }, 2000);
@@ -106,31 +108,7 @@ I like to sketch sometimes!<br><br>Sounds good?`;
   }, 1000);
 });
 
-// Transitions for home screen
-
-function homeTransition(
-  div1,
-  div2,
-  fontSize = "",
-  textAlign = "",
-  padding = "",
-  paddingTop = ""
-) {
-  setTimeout(() => {
-    blockDiv(div1);
-    displayDiv(div2);
-    setProperties(div2, fontSize, textAlign);
-    if (!paddingTop == "") {
-      setPaddingTop(paddingTop);
-    }
-    if (!padding == "") {
-      setPadding(padding);
-    }
-  }, 2000);
-}
-
 // Helper functions
-
 function setProperties(divId, fontSize = "", textAlign = "") {
   var screenHeight = window.innerHeight;
   document.getElementById(`${divId}`).style.height = `${screenHeight}px`;
