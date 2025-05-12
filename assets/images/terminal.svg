@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="64" height="64" fill="#000000"/>
+    
+    <!-- K Letter -->
+    <path d="M20 16H28V28L40 16H48L36 32L48 48H40L28 36V48H20V16Z" fill="#33FF33"/>
+</svg> 
