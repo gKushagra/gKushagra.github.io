@@ -34,7 +34,7 @@ function showSection(sectionId) {
 // Return to the main terminal view
 function showTerminal() {
   setPrompt('ls');
-  const sections = ["projects", "education", "experience", "articles"];
+  const sections = ["projects", "education", "experience", "articles", "contact"];
   sections.forEach(id => {
     const element = document.getElementById(id);
     if (element) element.style.display = 'none';
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setPrompt('ls');
 
   // Add click event listeners for each folder
-  const folderIds = ["projects-folder", "education-folder", "experience-folder", "articles-folder"];
+  const folderIds = ["projects-folder", "education-folder", "experience-folder", "articles-folder", "contact-folder"];
   folderIds.forEach(id => {
     const folder = document.getElementById(id);
     if (folder) {
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Add 'q' key to exit sections
   document.addEventListener('keydown', function (e) {
-    const sections = ["projects", "education", "experience", "articles"];
+    const sections = ["projects", "education", "experience", "articles", "contact"];
     const anySectionActive = sections.some(id => {
       const element = document.getElementById(id);
       return element && element.style.display === 'block';
