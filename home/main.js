@@ -1,48 +1,83 @@
-blockDiv("projects");
-blockDiv("education");
-
-// Drop down menu
-function selectClick() {
-  var e = document.getElementById("nav-select");
-  var val = e.options[e.selectedIndex].value;
-  if (val === "projects") {
-    displayProjects();
-  } else if (val === "education") {
-    displayEducation();
-  } else if (val === "./Docs/pdf1.pdf") {
-    window.open(val, "_blank");
-  } else if (
-    val ===
-    "https://docs.google.com/forms/d/e/1FAIpQLScT75h-GG0wehBKPcu_jERbolat1wQvJ2ZDGEKmkwfT-PGYhg/viewform?embedded=true"
-  ) {
-    window.open(val, "_blank");
+// Set the initial terminal prompt
+function setPrompt(text) {
+  const promptLine = document.getElementById('terminal-prompt-line');
+  if (promptLine) {
+    promptLine.innerHTML = `<span class="prompt">kushagra@www:~$</span> ${text}`;
   }
 }
 
-// Display projects
-function displayProjects() {
-  if (document.getElementById("education").style.display === "block") {
-    blockDiv("education");
-  }
-  displayDiv("projects");
+// Show a specific section (Projects, Education, Experience, Articles)
+function showSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  const folderList = document.getElementById('ls-output');
+
+  if (!section || !folderList) return;  // Exit if the section or folder list doesn't exist
+
+  // Hide all sections
+  const sections = ["projects", "education", "experience", "articles"];
+  sections.forEach(id => {
+    const element = document.getElementById(id);
+    if (element) element.style.display = 'none';
+  });
+
+  // Hide the folder list
+  folderList.style.display = 'none';
+
+  // Show the selected section
+  section.style.display = 'block';
+
+  // Set terminal prompt based on the section
+  const promptText = `man ${sectionId.charAt(0).toUpperCase() + sectionId.slice(1)}`;
+  setPrompt(promptText);
 }
 
-// Display education
-function displayEducation() {
-  if (document.getElementById("projects").style.display === "block") {
-    blockDiv("projects");
-  }
-  displayDiv("education");
+// Return to the main terminal view
+function showTerminal() {
+  setPrompt('ls');
+  const sections = ["projects", "education", "experience", "articles"];
+  sections.forEach(id => {
+    const element = document.getElementById(id);
+    if (element) element.style.display = 'none';
+  });
+
+  // Show the folder list
+  const outputArea = document.getElementById('ls-output');
+  if (outputArea) outputArea.style.display = 'block';
 }
 
-// Block a div
-function blockDiv(divId) {
-  document.getElementById(`${divId}`).style.display = "none";
-}
+// Initialize terminal and event listeners
+document.addEventListener("DOMContentLoaded", function () {
+  setPrompt('ls');
 
-// Display a div
-function displayDiv(divId) {
-  document.getElementById(`${divId}`).style.display = "block";
-}
+  // Add click event listeners for each folder
+  const folderIds = ["projects-folder", "education-folder", "experience-folder", "articles-folder"];
+  folderIds.forEach(id => {
+    const folder = document.getElementById(id);
+    if (folder) {
+      folder.style.cursor = "pointer";
+      folder.addEventListener("click", function () {
+        const sectionId = id.replace("-folder", "");
+        showSection(sectionId);
+      });
+    }
+  });
 
-// Get current Time and date
+  // Add back link functionality
+  document.querySelectorAll('.back-link').forEach(function (link) {
+    link.style.cursor = 'pointer';
+    link.addEventListener('click', showTerminal);
+  });
+
+  // Add 'q' key to exit sections
+  document.addEventListener('keydown', function (e) {
+    const sections = ["projects", "education", "experience", "articles"];
+    const anySectionActive = sections.some(id => {
+      const element = document.getElementById(id);
+      return element && element.style.display === 'block';
+    });
+
+    if (e.key === 'q' && anySectionActive) {
+      showTerminal();
+    }
+  });
+});
