@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'Loading user bio...',
     ...introText.split('\n').map(line => line.trim() ? `<span class="terminal-line highlight-line">>>${line}</span>` : ''),
     '',
-    'Installation complete. Press ⏎ Enter to continue.'
+    'Sounds good? Press ⏎ Enter to know more.'
   ];
 
   let i = 0;
