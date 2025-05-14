@@ -1,0 +1,194 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #8aff80;
+    font-family: "DejaVu Sans Mono", "Courier New", monospace;
+    height: 100%;
+    overflow: hidden;
+    /* Prevent outer scrollbar */
+}
+
+/* Terminal wrapper */
+.terminal-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.terminal-real {
+    width: 60vw;
+    max-width: 900px;
+    background: #000;
+    color: #8aff80;
+    font-size: 1.05rem;
+    padding: 2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Prompt colors */
+.prompt-user {
+    color: #5fd7ff;
+    font-weight: bold;
+}
+
+.prompt-symbol {
+    color: #ffffff;
+    margin-right: 0.5ch;
+}
+
+.prompt {
+    color: #7ecfff;
+    font-weight: bold;
+}
+
+/* Terminal Output */
+.ls-pre {
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.05rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Line display */
+.terminal-line {
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-bottom: 0.3em;
+}
+
+.highlight-line {
+    color: #ffd866;
+    /* yellow-like */
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Folder styles */
+.folder {
+    color: #8aff80;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 9ch;
+    margin-right: 2ch;
+    transition: color 0.2s;
+}
+
+.folder:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* MAN page styling */
+.man-page {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-left: 2ch;
+    text-align: left;
+    overflow-x: auto;
+}
+
+.man-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 1.2em;
+}
+
+.man-section-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.man-indent {
+    padding-left: 2ch;
+    margin-bottom: 0.5em;
+}
+
+.man-project-title {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    display: block;
+}
+
+.man-hanging {
+    padding-left: 4ch;
+    text-indent: -2ch;
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+.man-divider {
+    margin: 1em 0;
+    letter-spacing: 0.05em;
+}
+
+.man-section-highlight {
+    color: #baffc9;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.man-link-label {
+    color: #baffc9;
+    font-weight: bold;
+}
+
+.man-link {
+    color: #8aff80;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.man-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #33FF33;
+    border-radius: 4px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+    .terminal-real {
+        width: 75vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .terminal-real {
+        width: 95vw;
+        font-size: 1rem;
+    }
+}
